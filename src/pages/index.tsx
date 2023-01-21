@@ -6,16 +6,16 @@ const Home: NextPage = () => {
   const t = [
     {
       id: "payment-checkout",
-      p: "1/19/2023"
+      p: "1/19/2023",
     },
     {
       id: "login-form",
-      p: "1/19/2023"
+      p: "1/19/2023",
     },
     {
       id: "Product card",
-      p: "1/19/2023"
-    }
+      p: "1/19/2023",
+    },
   ];
 
   return (
@@ -26,9 +26,16 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <main>
-        <h1 className="font-semibold text-center p-3 m-5 mt-16 mb-16 text-6xl">Showcase</h1>
+        <h1 className="m-5 mt-16 p-3 text-center text-6xl font-semibold">
+          Showcase
+        </h1>
+        <div className="flex justify-center">
+          <button className="m-3 mb-16 mt-7 rounded-lg border-2 border-orange-600 p-2 pr-11 pl-11 text-black hover:bg-orange-600 hover:text-white">
+            Source Code
+          </button>
+        </div>
         <hr />
-        <div className="flex flex-wrap justify-center mt-7">
+        <div className="mt-7 flex flex-wrap justify-center">
           {t.map((r, i) => {
             return (
               <div
@@ -39,10 +46,10 @@ const Home: NextPage = () => {
                   {r.id.charAt(0).toUpperCase()}
                   {r.id.replaceAll("-", " ").substring(1)}
                 </h1>
-                <h6 className="text-center mt-4">{r.p}</h6>
+                <h6 className="mt-4 text-center">{r.p}</h6>
                 <br />
                 <div className="flex justify-center">
-                  <button className="m-3 mt-7 rounded-lg border-2 text-black border-sky-600 p-2 pr-11 pl-11 hover:bg-sky-600 hover:text-white">
+                  <button onClick={() => { window.location.href = `/s/${r.id}` }} className="m-3 mt-7 rounded-lg border-2 border-sky-600 p-2 pr-11 pl-11 text-black hover:bg-sky-600 hover:text-white">
                     Try it now
                   </button>
                 </div>
