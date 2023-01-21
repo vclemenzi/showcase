@@ -21,6 +21,7 @@ export const Default = (props: React.PropsWithChildren) => {
       <Head>
         <title>{name}</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content={`Try ${name}! And add your star on github`} />
       </Head>
       <Navbar />
       <main>{props.children}</main>

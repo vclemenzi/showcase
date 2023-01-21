@@ -32,7 +32,7 @@ export const Navbar = () => {
       <div>
         <a
           onClick={() => {
-            window.location.href = "https://github.com/athebigbot/showcase";
+            window.open("https://github.com/athebigbot/showcase");
           }}
           className="ml-1 mr-1 cursor-pointer text-slate-400 hover:text-sky-600"
         >
@@ -40,8 +40,7 @@ export const Navbar = () => {
         </a>
         <a
           onClick={() => {
-            window.location.href =
-              "https://github.com/athebigbot/showcase/stargazers";
+            window.open("https://github.com/athebigbot/showcase/stargazers");
           }}
           className="ml-1 mr-1 cursor-pointer text-slate-400 hover:text-sky-600"
         >
