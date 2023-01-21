@@ -7,8 +7,8 @@ export const Default = (props: React.PropsWithChildren) => {
 
   useEffect(() => {
     setName(
-      window.location.pathname.charAt(0).toUpperCase() +
-        window.location.pathname.replaceAll("-", " ").substring(1)
+      window.location.pathname.charAt(3).toUpperCase() +
+        window.location.pathname.replaceAll("/s/", "").replaceAll("-", " ").replaceAll("/", "").substring(1)
     );
   }, []);
 
