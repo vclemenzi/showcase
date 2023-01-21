@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       p: "1/19/2023",
     },
     {
-      id: "Product card",
+      id: "product-card",
       p: "1/19/2023",
     },
   ];
