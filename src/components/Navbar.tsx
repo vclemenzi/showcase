@@ -25,7 +25,7 @@ export const Navbar = () => {
 
   return (
     <nav className="flex bg-slate-100 p-4">
-      <h1 className="text-lg font-semibold text-slate-800">
+      <h1 className="text-lg font-semibold text-slate-800 cursor-pointer">
         {!isInProject ? "Showcase" : project}
       </h1>
       <span className="ml-3 mr-3 text-slate-400">|</span>

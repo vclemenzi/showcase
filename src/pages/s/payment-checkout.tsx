@@ -2,7 +2,7 @@ import { Default } from "../../components/Deafault";
 
 export default function Element() {
   return (
-    <Default>
+    <Default isMobileAllowed={false}>
       <div className="flex min-h-screen flex-row items-center justify-center">
         <div className="bg-slate-100 p-14 drop-shadow-lg">
           <h1 className="mb-8 text-2xl font-semibold">Confirm your payment</h1>

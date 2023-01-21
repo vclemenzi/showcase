@@ -33,17 +33,17 @@ const Home: NextPage = () => {
         <div className="flex justify-center">
           <button onClick={() => {
             window.open("https://github.com/athebigbot/showcase");
-          }} className="m-3 mb-16 mt-7 rounded-lg border-2 border-orange-600 p-2 pr-11 pl-11 text-black hover:bg-orange-600 hover:text-white">
+          }} className="shadow-lg hover:shadow-orange-400 m-3 mb-16 mt-7 rounded-lg border-2 border-orange-600 p-2 pr-11 pl-11 text-black hover:bg-orange-600 hover:text-white">
             Source Code
           </button>
         </div>
         <hr />
-        <div className="mt-7 flex flex-wrap justify-center">
+        <div className="mt-7 flex flex-wrap justify-center sha">
           {t.map((r, i) => {
             return (
               <div
                 key={i}
-                className="m-5 w-64 rounded-lg border-2 p-1 pt-14 pb-14"
+                className="m-5 w-64 rounded-lg border-2 p-1 pt-14 pb-14 shadow-md hover:shadow-lg"
               >
                 <h1 className="mt-2 text-center text-2xl font-semibold">
                   {r.id.charAt(0).toUpperCase()}
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
                 <h6 className="mt-4 text-center">{r.p}</h6>
                 <br />
                 <div className="flex justify-center">
-                  <button onClick={() => { window.location.href = `/s/${r.id}` }} className="m-3 mt-7 rounded-lg border-2 border-sky-600 p-2 pr-11 pl-11 text-black hover:bg-sky-600 hover:text-white">
+                  <button onClick={() => { window.location.href = `/s/${r.id}` }} className="m-3 mt-7 rounded-lg border-2 border-sky-600 p-2 pr-11 pl-11 text-black hover:bg-sky-600 shadow-lg hover:shadow-sky-400 hover:text-white">
                     Try it now
                   </button>
                 </div>
