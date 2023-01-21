@@ -2,8 +2,6 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 
 export default function Err() {
-    const [state, setState] = useState("");
-
     useEffect(() => {
         setTimeout(() => { window.location.href = "/"; }, 1300);
     }, []);
