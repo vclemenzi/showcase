@@ -6,7 +6,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     setIsInproject(window.location.pathname.length > 1);
-    setProject(window.location.pathname.replaceAll("-", " "));
+    setProject(window.location.pathname.replaceAll("-", " ").replaceAll("/s/", ""));
   }, []);
 
   return (
