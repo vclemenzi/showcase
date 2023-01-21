@@ -5,7 +5,7 @@ import { Navbar } from "../components/Navbar";
 const Home: NextPage = () => {
   const t = [
     {
-      id: "payment-checkout",
+      id: "payment-card",
       p: "1/19/2023",
     },
     {
