@@ -57,7 +57,7 @@ export const Navbar = () => {
             "share"
           ) : (
             <>
-              <span className="text-green-500">copied</span>
+              <span className="text-green-500">✓ copied</span>
             </>
           )}
         </a>
