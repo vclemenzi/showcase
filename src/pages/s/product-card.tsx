@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { Default } from "../../components/Deafault";
 
 export default function Element() {
-  const [type, setType] = useState(1);
   return (
     <Default>
       <div className="flex min-h-screen flex-row items-center justify-center">
