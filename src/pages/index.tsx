@@ -30,7 +30,9 @@ const Home: NextPage = () => {
           Showcase
         </h1>
         <div className="flex justify-center">
-          <button className="m-3 mb-16 mt-7 rounded-lg border-2 border-orange-600 p-2 pr-11 pl-11 text-black hover:bg-orange-600 hover:text-white">
+          <button onClick={() => {
+            window.location.href = "https://github.com/athebigbot/showcase";
+          }} className="m-3 mb-16 mt-7 rounded-lg border-2 border-orange-600 p-2 pr-11 pl-11 text-black hover:bg-orange-600 hover:text-white">
             Source Code
           </button>
         </div>
